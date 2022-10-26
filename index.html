@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Bachelor Program</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Nunito:wght@600;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Nunito:wght@600;900&display=swap" rel="stylesheet">
+        
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script> -->
+        <style>
+        html{
+            scroll-behavior: smooth !important;
+            scroll-padding-top: 100px;
+        }
+        body{
+            line-height: 1.7;
+            font-family: 'Cabin', sans-serif !important;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        .tab-content {
+            font-size: 1.6rem;
+            padding-top:1rem;
+        }
+        /* === Navbar === */
+        .navbar {
+            margin-bottom: 0;
+            
+        }
+        .navbar-nav > li{
+            padding-left:1px;
+            padding-right:1px;
+            letter-spacing: 1px;
+            
+        }
+        .navbar-light .navbar-brand{
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            
+        }
+        a.navbar-brand span{
+            font-size: 1.7rem;
+            font-weight: 900;
+            
+        }
+        .navbar-dark .navbar-nav .nav-link{
+            color: #a18c8c;
+            text-decoration: none !important;
+            
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #ffffff;
+        }
+        
+        /* === Carousel === */
+        
+        .first-section {
+            background-position-x: center;
+            overflow: hidden;
+            height: 80vh;
+            vertical-align: middle;
+            background-size: cover;
+        }
+        .carousel {
+            width: 70vw;
+            padding-top:5rem;
+        }
+        
+     
+        .deplogo {
+           
+            margin-left:0;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #A8E890;
+            
+        }
+        .nav-item:hover{
+            background-color: #749F82; 
+            color: #CFFF8D;
+            border-radius: 0.5rem;
+            
+        }
+        .nav-link:hover {
+            color: #ffffff !important;
+        }
+        .btnLang i{
+            
+          position: fixed;
+          bottom: 3rem;
+          left: 3rem;
+          scale: 250%;
+        }
+        td a {
+            color: inherit; 
+        }
+        #preloader {
+            background: #fff url(imgs/loader3.gif) no-repeat center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+           }
+           .image {
+            line-height: 1.7;
+            font-family: 'Cabin', sans-serif;
+            font-size: 1.4rem;
+           }
+           .image li {
+            padding: 1rem;
+           }
+           .table-responsive {
+    overflow-x:auto;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  line-height: 1.7;
+            font-family: 'Cabin', sans-serif !important;
+            font-size: 1.2rem;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    border-top: 1px solid black;}
+tr:nth-child(odd){
+    background-color: #f2f2f2;
+    border-top: 1px solid black;
+}
+tr:nth-child(1){
+    border-top: hidden;
+}
+th {
+  background-color: #207432;
+  color: white;
+}
+tr:hover {
+  background-color: #D2D2D2;
+}
+a {
+    text-decoration: none !important;
+}
+.elective-table th{
+    color: #000;
+
+}
+
+                </style>
+    </head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;">
+            <div class="container ">
+                <img style="width:10%" class="deplogo" alt="جامعة الملك عبد العزيز" src="https://marz.kau.edu.sa/Files/13009/Galleries/8551/66274_logo_kau.png" /> 
+                <a class="navbar-brand mr-5 pr-3" href="#">
+                    
+                    <span>Mathematics</span>
+                    Department
+                </a>
+                
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Abbreviations">Abbreviations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Program Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Statistics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Course Details</a>
+                        </li>
+                        <li class="nav-item dropdown dropend text-muted ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right w3-animate-zoom" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item " href="#">Administrative Structure</a></li>
+                              <div class="dropdown-divider"></div>
+                              <span class="dropdown-header">Staff Directory</span>
+                              <li><a class="dropdown-item" href="#">Staff Members</a></li>
+                              <li><a class="dropdown-item" href="#">Administrative Staff</a></li>
+                              <li><a class="dropdown-item" href="#">Graduate Staff</a></li>
+                              <div class="dropdown-divider"></div>
+                              <li><a class="dropdown-item" href="#">Research</a></li>
+
+                            </ul>
+                          </li>
+                        </div>
+                        
+                    </ul>
+                        
+                      
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+    </header>
+
+
+    <div class="parallax-content baner-content" id="home">
+        <div class="container">
+            <div class="text-content">
+                <h2><span>Bachelor Program</span></h2>
+                <p> Mathematics is the basis for successful decision making and problem solving independent of industry. Pollosalmodels help us analyze information and forecast results in different sector such as economics, finance, engineering, and medicine. This analysis helps GOV and businesses understand the factors behind important decisions. The Department of Mathematics undergraduate program leading to the degrees of Bachelor. This program is designed to expand and consolidate existing Mathematics knowledge and to develop skills in Mathematics. The diversity of undergraduate courses offered in the department of Mathematics gives the student an opportunity to specialize in one of the several fields of pure and applied Mathematics. Graduates will gain highly transferable skills in problem solving, data analysis, logistics and logic, probability and variability and Pollosal modelling.
+                </p>
+                <div class="primary-white-button">
+                    <a href="#" class="scroll-link" data-id="about">Let's Start</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about" class="page-section">
+        <div id="Abbreviations" class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="icons/location-1.png" alt="">
+                        </div>
+                        <h4>Home Faculty</h4>
+                        <div class="line-dec"></div>
+                        <p>Faculty of Science</p>
+                        <!-- <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="icons/title-2.png" alt="">
+                        </div>
+                        <h4>Testamur Title of Degree</h4>
+                        <div class="line-dec"></div>
+                        <p>BSc in Mathematics</p>
+                        <!-- <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="icons/time.png" alt="">
+                        </div>
+                        <h4>Duration</h4>
+                        <div class="line-dec"></div>
+                        <p>4 Years Full-Time</p>
+                        <!-- <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                        </div> -->
+                    </div>
+                    
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="icons/text-1.png" alt="">
+                        </div>
+                        <h4>Abbreviation</h4>
+                        <div class="line-dec"></div>
+                        <p>Mathematics.</p>
+                        <!-- <div class="primary-blue-button">
+                            <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="section-heading">
+                            <h4>Mission </h4>
+                            <div class="line-dec"></div>
+                            <p>"Community Responsibility : Knowledge Development, Research, Innovation and Entrepreneurship" .</p>
+                            <div class="filter-categories">
+                                <ul class="project-filter ">
+                                    <li class="filter active"><a data-toggle="tab" href="#1st"><span>Program Educational Objectives</span></a></li>
+                                    <li class="filter"><a data-toggle="tab" href="#2nd"><span>Student Outcomes</span></a></li>
+                                    <li class="filter"><a data-toggle="tab" href="#3rd"><span>Entry Requiremenets</span></a></li>
+                                    <li class="filter"><a data-toggle="tab" href="#4th"><span>Program Structure</span></a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="col-md-8">
+                        <div class="projects-holder-3">
+                            <div class="programs-details">
+                                <div class="row">
+                                    <div class="tab-content">
+                                        <div id="1st" class="tab-pane fade in active">
+                                                <p class="tab-content">Graduates from BSc of Mathematics are expected to achieve the following program educational objectives:
+                                                    <ul class="content">
+                                                        <li class="content">
+                                                            Have a successful career in the practice of Mathematics and related applications built on their understanding of formal and applied methods for problem-solving.
+                                                        </li>
+                                                        <li>
+                                                            Advance in responsibility and leadership and contribute as active partners in the economic growth and the sustainable development of the Saudi society.
+
+                                                        </li>
+                                                        <li>
+                                                            Engage in professional development and/or graduate studies to pursue flexible career paths amid future technological changes</p>
+
+                                                        </li>        
+                                    </div>
+                                        <div id="2nd" class="tab-pane fade ">
+                                                <p class="tab-content">In ABET accreditation terminology, SOs describe "what students are expected to know and be able to do by the time of graduation. These relate to the knowledge, skills, and behaviors that students acquire as they progress through the program". The Mathematics program has adopted the  ABET 6 general-criteria outcomes for the ANSAC Commission as:
+                                                    <ul class="content">
+                                                    <li>An ability to identify, formulate, and solve broadly defined technical or scientific problems by applying knowledge of Mathematics and science and/or technical topics to areas relevant to the discipline.
+                                                    </li>
+                                                    <li>An ability to formulate or design a system, process, procedure or program to meet desired needs.
+                                                    </li>
+                                                    <li>An ability to develop and conduct experiments or test hypotheses, analyze and interpret data and use scientific judgment to draw conclusions.</li>
+                                                    <li>An ability to communicate effectively with a range of audiences.</li>
+                                                    <li>An ability to understand ethical and professional responsibilities and the impact of technical and/or scientific solutions in global, economic, environmental, and societal contexts.</li>
+                                                    <li>An ability to function effectively on teams that establish goals, plan tasks, meet deadlines, and analyze risk and uncertainty</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                            <div id="3rd" class="tab-pane fade">
+                                                <p class="tab-content">To become eligible for admission to BSc in Mathematics, candidates have to fulfill the following conditions:
+                                                    <ul class="content">
+                                                    <li>Student should hold the secondary school certificate.</li>
+                                                    <li>Student should have passed all courses in the foundation year.</li>
+                                                    <li>Student should have obtained at least grade (C) in Math 110</li>
+                                                    </ul>
+                                            </p>
+                                     
+                                            </div>
+                                            <div id="4th" class="tab-pane fade">
+                                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                                    <div class="container ">
+                                                        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                                            <span class="navbar-toggler-icon"></span>
+                                                        </button>
+                                                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0" id="pills-tab" role="tablist">
+                                                                <li class="nav-item "  role="presentation">
+                                                                    <a class="nav-link active"   id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">University Compulsory Courses</a>
+                                                                </li>
+                                                                <li class="nav-item"  role="presentation">
+                                                                    <a class="nav-link"  id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"  role="tab" aria-controls="pills-home" aria-selected="true">Faculty Compulsory Courses: </a>
+                                                                </li>
+                                                                <li class="nav-item"  role="presentation">
+                                                                    <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Faculty Elective Courses</a>
+                                                                </li>
+                                                                <li class="nav-item"  role="presentation">
+                                                                    <a class="nav-link" data-toggle="tab" href="#four">Department Compulsory Courses</a>
+                                                                </li>
+                                                                <li class="nav-item"  role="presentation">
+                                                                    <a class="nav-link" data-toggle="tab" href="#five">Department Elective Courses</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#six">Statics & Computers Depart</a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#seven">Free Activities</a>
+                                                                </li>
+                                                                </div>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <div class="tab-content" id="pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                                                  </div>
+                                        <div id="one" class="tab-pane fade active in">
+                                            
+
+                                        </div>
+                                        <div id="two" class="tab-pane fade">
+
+                                            Faculty Compulsory Courses:
+                                            15 credit hours, Student should choose from the following courses: MATH 110, PHYS 110, STAT 110, CHEM 110, and BIO 110.  
+
+                                            </div>
+                                            <div id="three" class="tab-pane fade">
+
+                                                Faculty Elective Courses:
+                                                9 credit hours, student should choose from the following courses: MATH 202, CHEM 281, PHYS 281, CHEM 200, PHYS 200 and MATH 390.
+
+                                                </div>
+                                                <div id="four" class="tab-pane fade">
+
+                                                    Department Compulsory Courses:
+                                                    48 credit hours, student should choose from the following courses: MATH 203, MATH 204, MATH 205, MATH 241, MATH 261, MATH 305, MATH 311, MATH 312, MATH 331, MATH 342, MATH 343, MATH 413, MATH 421, MATH 463, MATH 464, and MATH 482.    
+
+                                                    </div>
+                                                    <div id="five" class="tab-pane fade">
+
+                                                        Department Elective Courses:
+                                                        16 credit hours, student should choose from the following courses: MATH 261, MATH 332, MATH 333, MATH 406, MATH 414, MATH 423, MATH 444, MATH 405, MATH 462, MATH 471 and MATH 481.
+
+                                                        </div>
+                                                        <div id="six" class="tab-pane fade">
+                                                            Statics & Computers Depart. Compulsory Courses:
+                                                            8 credit hours, student should choose from the following courses: CS 201 and STAT 211.
+                                                            </div>
+                                                            <div id="seven" class="tab-pane fade">
+                                                                <p class="tab-content">Free Activities:
+                                                                    6 credit hours elective courses that can be taught by any department in the university.
+                                                                </p>
+                                                                </div>
+                                                <!-- <p class="tab-content">Every student registered for B.Sc. degree in mathematics shall have to follow the following plan of studies:
+                                                </p> -->
+                                                    <!-- <ol>
+                                                        <li>
+                                                            University Compulsory Courses:
+                                                            26 credit hours, student should choose from the following courses: ELI 101, ELI 102, ELI 103, ELI 104, CPIT 100, COMM 101, ARAB 101, ARAB 201, ISLS 101, ISLS 201, ISLS 301, ISLS 401.
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            Faculty Compulsory Courses:
+                                                            15 credit hours, Student should choose from the following courses: MATH 110, PHYS 110, STAT 110, CHEM 110, and BIO 110.  
+                                                        </li>
+                                                       
+                                                        <li>
+                                                            Faculty Elective Courses:
+                                                            9 credit hours, student should choose from the following courses: MATH 202, CHEM 281, PHYS 281, CHEM 200, PHYS 200 and MATH 390.
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            Department Compulsory Courses:
+                                                            48 credit hours, student should choose from the following courses: MATH 203, MATH 204, MATH 205, MATH 241, MATH 261, MATH 305, MATH 311, MATH 312, MATH 331, MATH 342, MATH 343, MATH 413, MATH 421, MATH 463, MATH 464, and MATH 482.    
+                                                    </li>
+                                                   
+                                                    <li>
+                                                        Department Elective Courses:
+                                                        16 credit hours, student should choose from the following courses: MATH 261, MATH 332, MATH 333, MATH 406, MATH 414, MATH 423, MATH 444, MATH 405, MATH 462, MATH 471 and MATH 481.
+                                                    </li>
+                                                    
+                                                    <li>
+                                                        Statics & Computers Depart. Compulsory Courses:
+                                                        8 credit hours, student should choose from the following courses: CS 201 and STAT 211.
+                                                    </li>
+                                                    
+                                                    <li>Free Activities:
+                                                        6 credit hours elective courses that can be taught by any department in the university.
+                                                    </li>
+                                                </ol> -->
+                                                
+                                                
+                                            </div>
+                                        </div>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="tab-content" style="color:#fff">B.Sc. Program Statistics</p>
+                        <table div="">
+                            <tr>
+                              <th>Year</th>
+                              <th>No. of Registered Students (Male)</th>
+                              <th>No. of Graduate Students (Male)</th>
+                              <th>No. of Registered Students (Female)</th>
+                              <th>No. of Graduate Students (Female)</th>
+                              <th>No. of Graduate Students International (Male)</th>
+                              <th>No. of Graduate Students International (Female)</th>
+                          
+                            </tr>
+                            <tr>
+                              <th>2016</th>
+                              <td>288</td>
+                              <td>45</td>
+                              <td>22</td>
+                              <td>113</td>
+                              <td>2</td>
+                              <td>1</td>
+                            </tr>
+                            <tr>
+                              <th>2017</th>
+                              <td>319</td>
+                              <td>69</td>
+                              <td>29</td>
+                              <td>144</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>2018</th>
+                              <td>476</td>
+                              <td>51</td>
+                              <td>53</td>
+                              <td>194</td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <th>2019</th>
+                              <td>413</td>
+                              <td>38</td>
+                              <td>31</td>
+                              <td>198</td>
+                              <td>3</td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <th>2020</th>
+                              <td>340</td>
+                              <td>68</td>
+                              <td>37</td>
+                              <td>235</td>
+                              <td>2</td>
+                              <td></td>
+                          </tr>
+                          </table>
+                        <!-- <div class="item">
+                            <div class="testimonials-item">
+                                <p>“ Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan molestie et quis justo. ”</p>
+                                <h4>George Rich</h4>
+                                <span>Marketing Head</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”</p>
+                                <h4>John Henry</h4>
+                                <span>Art Director</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>“ Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac velit. Curabitur laoreet massa et fringilla sagittis. ”</p>
+                                <h4>Danny Cute</h4>
+                                <span>Founder</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-item">
+                                <p>“ Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non nisi iaculis vestibulum. Aliquam erat volutpat. ”</p>
+                                <h4>Richard Beal</h4>
+                                <span>Senior Developer</span>
+                            </div>
+                        </div> -->
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="tabs-content" id="blog">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col-md-4">
+                        <div class="section-heading">
+                            <h4>Course Details</h4>
+                            <div class="line-dec"></div>
+                            <p></p>
+                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <li><a href="#tab1" class="active">Study Plan for Department of Mathematics</a></li>
+                                <li><a href="#tab2">Department Compulsory Courses</a></li>
+                                <li><a href="#tab3">Department Elective Course</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                
+                            </div>
+                            <div id="tab2">
+                                
+                                <table class="table table-responsive elective-table">
+                                    <thead>
+                                    <tr>
+                                    <th colspan="4" class="text-nowrap table-primary">Click on the course for more details</th>    
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="">
+                                        <td><a href="https://math.kau.edu.sa/Files/13009/Files/162950_Math.110(English).pdf">MATH 110</a></td>
+                                        <td>MATH 111</td>
+                                        <td>MATH 201</td>
+                                        <td>Math 202</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 203</td>
+                                        <td>MATH 204</td>
+                                        <td>MATH 205</td>
+                                        <td>Math 241</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 251</td>
+                                        <td>MATH 261</td>
+                                        <td>MATH 305</td>
+                                        <td>Math 311</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 312</td>
+                                        <td>MATH 331</td>
+                                        <td>MATH 332</td>
+                                        <td>Math 333</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 342</td>
+                                        <td>MATH 343</td>
+                                        <td>MATH 390</td>
+                                        <td>Math 406</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 413</td>
+                                        <td>MATH 414</td>
+                                        <td>MATH 421</td>
+                                        <td>Math 422</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 423</td>
+                                        <td>MATH 444</td>
+                                        <td>MATH 445</td>
+                                        <td>Math 462</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>MATH 463</td>
+                                        <td>MATH 464</td>
+                                        <td>MATH 471</td>
+                                        <td>Math 481</td>
+                                    </tr>
+                                    <tr class="">
+                                        <td><a href="kau.edu.sa">MATH 482</a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr></tr>
+                                    </tbody>
+                                    </table>
+                            </div>
+                            <div id="tab3">
+                                <table class="table table-responsive elective-table">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="4" class="text-nowrap table-primary">List of Elective Courses</th>    
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-success">
+                                        <th>Course</th>
+                                        <th>Course Title</th>
+                                        <th>Credit Hours</th>
+                                        <th>Pre-Requisites</th>
+                                    </tr>
+                                    <tr class="">
+                                        <th>MATH 261</th>
+                                        <td>Analytic Geometry</td>
+                                        <td>3</td>
+                                        <td>Math 110</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 332</th>
+                                        <td>Topics in Applied Mathematics</td>
+                                        <td>3</td>
+                                        <td>MATH 204, MATH 205 & MATH 241</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 333</th>
+                                        <td>Financial Mathematics</td>
+                                        <td>3</td>
+                                        <td>MATH 204, MATH 205 & MATH 241</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 406</th>
+                                        <td>Partial Differential Equations</td>
+                                        <td>3</td>
+                                        <td>Math305</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 414</th>
+                                        <td>Selected Topics</td>
+                                        <td>3</td>
+                                        <td>Math 312</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 423</th>
+                                        <td>Numerical Analysis II</td>
+                                        <td>3</td>
+                                        <td>Math 421</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 444</th>
+                                        <td>Number Theory</td>
+                                        <td>3</td>
+                                        <td>Math 342</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 445</th>
+                                        <td>Selected Topics</td>
+                                        <td>3</td>
+                                        <td>Math 343</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 462</th>
+                                        <td>Euclidean and non-Euclidean Geometries</td>
+                                        <td>3</td>
+                                        <td>Math 343</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 471</th>
+                                        <td>Discrete Mathematics</td>
+                                        <td>3</td>
+                                        <td>Math 343</td>
+                                    </tr>
+                                    <tr class="">
+                                        <th>Math 481</th>
+                                        <td>History of Mathematics</td>
+                                        <td>3</td>
+                                        <td>Permission of the Department</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                           
+                            </div>
+                        </section>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Contact Us</h4>
+                        <div class="line-dec"></div>
+                        <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros feugiat.</p>
+                        <div class="pop-button">
+                            <h4>Send us a message</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="pop">
+                        <span>✖</span>
+                        <form id="contact" action="#" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                  </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="map">
+    	<!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+        -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.449303911606!2d39.251464185735934!3d21.490114177245445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cdcf98400001%3A0x27067d3814778fe2!2z2YPZhNmK2Kkg2KfZhNi52YTZiNmFINmF2KjZhtmJIDExNQ!5e0!3m2!1sar!2s!4v1666121877587!5m2!1sar!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <!-- <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="logo">
+                        <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
+                        <p>Copyright &copy; 2020 Your Company 
+                       <br>Design: TemplateMo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="location">
+                        <h4>Location</h4>
+                        <ul>
+                            <li>46 Raffles Ave, <br>Singapore 039803</li>
+                            <li>12 Republic Blvd, <br>Singapore 038975</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="contact-info">
+                        <h4>More Info</h4>
+                        <ul>
+                            <li><em>Phone</em>: 040-040-0440</li>
+                            <li><em>Email</em>: tk@company.co</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <div class="connect-us">
+                        <h4>Get Social with us</h4>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+    <footer>
+        <div class="" id = "contact" style="color:#fff">
+            <div class="row  justify-content-md-center py-5">
+
+                <!-- contact details for the institute -->
+                  <div class="col-lg-4 col-md-4 col-xs-12 ml-5 mb-3">
+                    <div class="widget clearfix">
+                        <div class="widget-title pb-2">
+                            <h3>---- Contact Us ----</h3>
+                        </div>
+                            <div class="info">
+                                <div class="address">
+                                    <h5><i class="fas fa-map-marker-alt mr-2"></i> Location :</h5>
+                                    <p style="color:#fff">Faculty of Science, Building A90, 3rd Floor</p>
+                                </div>
+                    
+                                <div class="email">
+                                    <h5><i class="fas fa-envelope mr-2"></i> Email :</h5>
+                                    <p style="color:#fff">sci.math@kau.edu.sa</p>
+                                </div>
+                    
+                                <div class="phone">
+                                    <h5><i class="fas fa-phone-alt mr-2"></i> Call :</h5>
+                                    <p style="color:#fff">+966 (12) 6952669 </p>
+                                </div>
+                                <div class="Whatsapp">
+                                    <h5><i class="fas fa-phone-alt mr-2"></i> Whatsapp :</h5>
+                                    <p style="color:#fff">+966568626948</p>
+                                </div>
+                
+                            </div>
+    
+                        <!-- important links -->
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://twitter.com/kau_math"><i class="fab fa-twitter fa-lg"></i>   KAU_Math</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 mr-5 mb-3">
+                    <!-- join us form -->
+                    
+
+                            <!-- <h4 class="text-white text-center mb-3">---- Get In Touch ----</h4> -->
+                            <div class="row ">
+                                <a class="twitter-timeline" data-lang="en" data-height="400" href="https://twitter.com/KAU_Math?ref_src=twsrc%5Etfw">Tweets by KAU_Math</a> 
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
