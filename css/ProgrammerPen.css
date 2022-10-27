@@ -219,6 +219,7 @@ p {
 }
 
 #portfolio .section-heading {
+    text-align: left !important;
 	padding-top: 5rem;
 	padding-bottom: 200px;
 	background-color: #4f946a;
@@ -448,7 +449,9 @@ p {
 #contact-us .pop-button {
 	margin-top: 30px;
 }
-
+#KAUHEADER_TopNavBar {
+    display: none !important;
+    }
 #contact input {
   border-radius: 0px;
   padding-left: 15px;
