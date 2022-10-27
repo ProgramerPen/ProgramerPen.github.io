@@ -837,6 +837,7 @@ footer .connect-us ul li a:hover {
             text-decoration: none;
         }
         .tab-content {
+            text-align: left !important;
             font-size: 1.6rem;
             padding-top:1rem;
         }
