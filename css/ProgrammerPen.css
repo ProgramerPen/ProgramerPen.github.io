@@ -990,7 +990,7 @@ tr:nth-child(even){
     
 }
 tr:nth-child(odd){
-    background-color: #ffffff;
+    background-color: #ddd;
 	}
 tr:nth-child(1){
     border-top: hidden;
