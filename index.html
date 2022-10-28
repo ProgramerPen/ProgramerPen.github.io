@@ -1,1126 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>Bachelor Program</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Nunito:wght@600;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Nunito:wght@600;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <style>
-            
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-* {
-    margin: 0;
-    padding: 0;
-    
-}
-
-body {
-	overflow-x: hidden;
-	font-family: 'Cabin', sans-serif;
-	
-}
-
-ul {	
-	margin: 0px;
-}
-
-ol li {
-	margin-top: 1rem;
-}
-ul li {
-	margin-top: 1rem;
-}
-p {
-	color: #7a7a7a;
-	font-size: 14px;
-	
-}
-
-.parallax-content {
-  width: 100%;
-  min-height: 100vh;
-  background-size: cover;
-}
-
-.primary-white-button a {
-	display: inline-block;
-	background-color: #fff;
-	font-size: 13px;
-	padding: 12px 18px;
-	color: #121212;
-	font-weight: 500;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 20px;
-}
-
-.primary-blue-button a {
-	display: inline-block;
-	background-color: #33c1cf;
-	font-size: 13px;
-	padding: 12px 18px;
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 20px;
-}
-
-.pop-button h4 {
-	display: inline-block;
-	background-color: #33c1cf;
-	font-size: 13px!important;
-	padding: 12px 18px;
-	color: #fff;
-	font-weight: 400!important;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 20px;
-	cursor: pointer;
-}
-
-
-/* .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
-    transition: all 0.2s ease-in-out;
-    height: 80px;
-    background-color:transparent;  
-    
-    flex-warp: nowarp;
-    line-height: 40px;
-} */
-
-/* .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
-    text-shadow: none;
-}
-
-.navbar-brand {
-	line-height: 80px;
-	padding: 0px;
-}
-
-.navbar-nav>li>a {
-	color: #fff!important;
-	font-size: 13px;
-	font-weight: 300;
-	text-transform: uppercase;
-	text-shadow: none;
-	line-height: 80px;
-	padding: 0px;
-	letter-spacing: 0.5px;
-}
-
-.navbar-nav>li {
-	margin-left: 45px;
-}
-
-.header.active .navbar-nav>li>a {
-	font-family: 'Open Sans', arial, sans-serif;
-	font-size: 13px;
-	font-weight: 300;
-	letter-spacing: 0.5px;
-	text-transform: uppercase;
-	text-shadow: none;
-	color: #121212!important;
-}
-
-.header.active {
-    background-color: rgba(250, 250, 250, 0.98);
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-}
-.navbar-brand {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 25px;
-	text-transform: uppercase;
-	color: #fff!important;
-	transition: all 0.5s;
-	 
-}
-.navbar-brand em {
-	font-style: normal;
-	color: #f7c552;
-	font-size: 32px;
-}
-.header.active .navbar-brand {
-	color: #121212!important;
-}
-.header .navbar-brand {
-    font-weight: 800;
-}
-.navbar-inverse {
-	background-image: none;
-	background-color: transparent;
-}
-.header .navbar {
-    margin: 0;
-    border: none;
-} */
-.page-section {
-    padding: 80px 0;
-}
-/* .navbar-inverse .navbar-toggle {
-	margin-top: 22px;
-    border-color: #f7c552;
-    background-color: #f7c552;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: #f7c552;
-}
-bootstrap.min.css:5
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 15px!important;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-@media (min-width: 768px) {
-    .header .navbar-brand {
-        padding-left: 0;
-    }
-    .navbar-nav {
-        float: right;
-    }
-} */
-/* @media (max-width: 480px) {
-    .page-section h1 {
-        font-size: 3em;
-    } */
-    .page-section h2 {
-        font-size: 2em;
-    }
-    .page-section p {
-        font-size: 1em;
-        margin: 0 0 20px;
-    }
-
-
-.parallax-content {
-  width: 100%;
-  min-height: 100vh;
-  background-size: cover;
-}
-
-.baner-content {
-	width: 100%;
-  	padding-top: 35vh;
-  	text-align: center;
-  	background-image: url(https://i.ibb.co/mS5scTY/rsz-presentation.jpg);
-  	vertical-align: middle;
-}
-
-.baner-content .text-content {
-	text-align: center;
-}
-
-.baner-content .text-content h2 {
-	font-size: 36px;
-	font-weight: 400;
-	color: #fff;
-}
-
-.baner-content .text-content h2 span {
-	font-weight: 700;
-	color: #33cf55!important;
-}
-
-.baner-content .text-content h2 em {
-	font-style: normal;
-	font-weight: 700;
-	color: #f89624!important;
-}
-
-.baner-content .text-content p {
-	color: #fff;
-	font-size: 14px;
-	line-height: 24px;
-	text-align: justify;
-    text-justify: inter-word;
-	/* padding: 0px 25%; */
-}
-
-.baner-content .text-content .primary-white-button {
-	margin-top: 25px;
-}
-
-
-#about {
-	padding: 150px 0px;
-	background-image: url(https://i.ibb.co/mS5scTY/rsz-presentation.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#about .service-item {
-	text-align: center;
-}
-
-#about .service-item .icon {
-	width: 110px;
-	height: 110px;
-	display: inline-block;
-	text-align: center;
-	line-height: 104px;
-	border: 3px solid #fff;
-	border-radius: 50%;
-	background-color: #207432;
-}
-
-#about .service-item h4 {
-	margin-bottom: 30px;
-	margin-top: 45px;
-	font-size: 17px;
-	font-weight: 500;
-	color: #fff;
-	letter-spacing: 1px;
-}
-
-#about .service-item .line-dec {
-	width: 100%;
-	height: 1px;
-	background-color: rgba(250, 250, 250, 0.5);
-}
-
-#about .service-item p {
-	color: #fff;
-	margin-top: 30px;
-}
-
-#about .service-item .primary-blue-button {
-	margin-top: 35px;
-}
-
-
-.projects-holder .mix {
-  display: none;
-}
-
-.projects-holder {
-	padding: 30px 5px 0px 15px;
-}
-
-.filter-categories {
-  margin-top: 60px;
-}
-.testa {
-	opacity: 0;
-}
-.filter-categories ul li {
-  margin: 0px 10px 15px 0px;
-  display: block;
-}
-
-.filter-categories ul li span {
-  cursor: pointer;
-  color: #fff;
-  display: inline-block;
-  font-size: 15px;
-  text-transform: capitalize;
-  font-weight: 500;
-  left: 0.5px;
-}
-
-.filter-categories ul li.active span {
-  color: #f7c552;
-  font-size: 2rem;
-}
-
-#portoflio .page-section {
-	padding: 0px;
-}
-
-#portfolio .section-heading {
-	padding-top: 5rem;
-	padding-bottom: 200px;
-	background-color: #4f946a;
-	height: 732px;
-	margin-left: -100vh;
-	padding-left: 100vh;
-}
-
-#portfolio .project-item {
-	margin: 0px -16px;
-}
-
-#portfolio .section-heading h4 {
-	margin-top: 0px;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: 1px;
-}
-
-#portfolio .section-heading .line-dec {
-	width: 270px;
-	height: 1px;
-	background-color: rgba(250, 250, 250, 0.5);
-	margin: 20px 0px 15px 0px;
-}
-
-#portfolio .section-heading p {
-	color: #fff;
-	padding-right: 70px;
-}
-
-
-#testimonial {
-	background-color: #425F57;
-	text-align: center;
-	padding: 100px 0px;
-}
-
-#testimonial .testimonials-item h4 {
-	color: #fff;
-	font-size: 17px;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	margin-top: 30px;
-	margin-bottom: 5px;
-}
-
-#testimonial .testimonials-item span {
-	font-size: 13px;
-	color: #fff;
-	letter-spacing: 0.5px;
-}
-
-#testimonial .testimonials-item p {
-	font-size: 16px;
-	color: #9a9a9a;
-	font-style: italic;
-	font-weight: 300;
-	background-color: #fff;
-	padding: 30px;
-	border-radius: 5px;	
-}
-
-.owl-pagination {
-  margin-top: 20px;
-  opacity: 1;
-  display: inline-block;
-}
-
-.owl-page span {
-  display: block;
-  width: 8px;
-  height: 8px;
-  margin: 0px 5px;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  background: #fff;
-}
-
-
-
-
-#blog {
-	background-image: url(../imgs/banner-3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#blog .section-heading {
-	text-align: left;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: rgba(0, 0, 0, 0.5);
-	height: 582px;
-	margin-left: -100vh;
-	padding-left: 100vh;
-	overflow: hidden!important;
-}
-
-#blog .section-heading h4 {
-	margin-top: 0px;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: 1px;
-}
-
-#blog .section-heading .line-dec {
-	width: 270px;
-	height: 1px;
-	background-color: rgba(250, 250, 250, 0.5);
-	margin: 20px 0 15px 0;
-}
-
-#blog .section-heading p {
-	color: #fff;
-	padding-right: 70px;
-}
-
-.wrapper {
-  text-align: center;
-}
-
-.tabs {
-  list-style: none;
-  margin-top: 40px;
-  padding-right: 70px;
-}
-
-.tabs li {
-  display: block;
-  text-align: center;
-  margin: 25px 0px;
-}
-
-.tabs a {
-  display:block;
-  text-align:center;
-  text-decoration:none;
-  text-transform:capitalize;
-  letter-spacing: 0.5px;
-  color:#121212;
-  font-size: 15px;
-  font-weight: 500;
-  padding: 12px 12px;
-  background-color: #fff;
-}
-
-.tabs a:hover {
-  color: #f7c552;
-}
-
-.tabs .active {
-  color: #f7c552;
-}
-#first-tab-group {
-	margin-top: 30px;
-	margin-bottom: 15px;
-}
-.tabgroup .text-content	 {
-  background-color: #fff;
-  color: #fff;
-  padding: 25px;
-  text-align: left;
-}
-.tabgroup .text-content h4 {
-	font-size: 17px;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	color: #121212;
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-.tabgroup .text-content span {
-	font-size: 13px;
-	color: #33c1cf;
-}
-.tabgroup .text-content a {
-	font-size: 13px;
-	color: #33c1cf;
-	text-decoration: none;
-}
-.tabgroup .text-content p {
-	margin-top: 10px;
-}
-
-.clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
-}
-
-#contact-us {
-	background-color: #596065;
-	text-align: center;
-	padding: 80px 0px;
-}
-
-#contact-us .section-heading h4 {
-	margin-top: 0px;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	letter-spacing: 1px;
-}
-
-#contact-us .section-heading .line-dec {
-	width: 270px;
-	height: 1px;
-	background-color: rgba(250, 250, 250, 0.5);
-	margin: 20px auto 15px auto;
-}
-
-#contact-us .section-heading p {
-	color: #fff;
-	padding: 0px 33%;
-}
-
-#contact-us .pop-button {
-	margin-top: 30px;
-}
-
-#contact input {
-  border-radius: 0px;
-  padding-left: 15px;
-  font-size: 13px;
-  color: #232323;
-  background-color: rgba(250, 250, 250, 1);
-  outline: none;
-  border: none;
-  box-shadow: none;
-  line-height: 50px;
-  height: 50px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-#contact textarea {
-  border-radius: 0px;
-  padding-left: 15px;
-  padding-top: 10px;
-  font-size: 13px;
-  color: #232323;
-  background-color: rgba(250, 250, 250, 1);
-  outline: none;
-  border: none;
-  box-shadow: none;
-  height: 165px;
-  max-height: 220px;
-  width: 100%;
-  margin-bottom: 25px;
-}
-
-#contact button {
-  display: inline-block;
-	background-color: #f7c552;
-	font-size: 13px;
-	padding: 12px 18px;
-	color: #fff;
-	font-weight: 500;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-decoration: none;
-	border-radius: 20px;
-}
-
-
-.pop #contact {
-	z-index: 99999;
-	position: fixed;
-	top: 25%;
-	left: 20%;
-	right: 20%;
-}
-
-.pop {
-	z-index: 99999;
-	text-align: center;
-	padding: 30px;
-    display:none;
-    position:fixed;
-    width: 100%;
-    top:0;
-    left:0;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 0px 15px;
-}
-
-.pop span {
-	z-index: 999;
-	position: relative;
-	margin-bottom: 20px;
-	cursor: pointer;
-	width: 44px;
-	height: 44px;
-	display: inline-block;
-	line-height: 44px;
-	color: #fff;
-	text-align: center;
-	background-color: #33c1cf;
-}
-
-.pop span:hover {
-	background-color: #596065;
-	transition: all 0.5s;
-}
-
-
-
-
-footer {
-	margin-top: -6px;
-	background-color: #373a3c;
-	padding: 50px 0px;
-}
-footer .logo em {
-	font-style: normal;
-	font-size: 28px;
-	color: #f7c552;
-}
-footer .logo-ft {
-	display: inline-block;
-	margin-top: 15px;
-	text-decoration: none;
-	color: #fff!important;
-	font-size: 21px;
-	font-weight: 900;
-	text-transform: uppercase;
-	text-shadow: none;
-	letter-spacing: 1px;
-}
-
-footer .logo p {
-	font-weight: 300;
-	font-size: 12px;
-	color: #fff;
-	margin-bottom: -10px;
-	letter-spacing: 0.5px;
-}
-
-footer .logo span {
-	font-weight: 600;
-	color: #f7c552;
-}
-
-footer .logo a {
-	color: #FFF;
-}
-
-footer .logo a:hover {
-	color: #9F0;
-}
-
-footer .location h4 {
-	margin-top: 0px;
-	font-size: 13px;
-	font-weight: 500;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	margin-bottom: 30px;
-}
-
-footer .location ul li {
-	font-size: 13px;
-	color: #fff;
-	display: inline-block;
-	line-height: 24px;
-	letter-spacing: 0.5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-footer .location ul li:first-child {
-	margin-right: 15px;
-	padding-right: 15px;
-	border-right: 1px solid rgba(250, 250, 250, 0.1);
-}
-
-footer .contact-info h4 {
-	margin-top: 0px;
-	font-size: 13px;
-	font-weight: 500;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	margin-bottom: 30px;
-}
-
-footer .contact-info ul li {
-	font-size: 13px;
-	color: #fff;
-	display: inline-block;
-	line-height: 24px;
-	letter-spacing: 0.5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-weight: 300;
-	margin-bottom: -15px;
-}
-
-footer .contact-info ul li em {
-	font-style: normal;
-	font-weight: 500;
-}
-
-footer .connect-us h4 {
-	margin-top: 0px;
-	font-size: 13px;
-	font-weight: 500;
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	margin-bottom: 35px;
-}
-
-footer .connect-us ul li {
-	display: inline-block;
-	margin-right: 2px;
-}
-
-footer .connect-us ul li a {
-	display: inline-block;
-	width: 28px;
-	height: 28px;
-	line-height: 28px;
-	text-align: center;
-	background-color: #fff;
-	border-radius: 50%;
-	color: #373a3c;
-	font-size: 15px;
-	transition: all 0.3s;
-}
-footer .connect-us ul li a:hover {
-	background-color: #f7c552;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 991px){
-
-	.baner-content .text-content p {
-		padding: 0px 15%;
-	}
-
-
-	#about .service-item {
-		margin-bottom: 80px;
-	} 
-
-	#portfolio .section-heading {
-		text-align: center;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		background-color: #33c1cf;
-		height: 505px;
-		margin-left: -15px;
-		padding-left: 0vh;
-		margin-right: -15px;
-		padding-right: 0vh;
-		overflow: hidden;
-	}
-
-	#portfolio .section-heading .line-dec {
-		margin: 20px auto 15px auto;
-	}
-
-	#portfolio .section-heading p {
-		padding: 0px 20px;
-	}
-
-	.programs-details {
-		text-align: center;
-		padding: 15rem 0px;
-	}
-	.content {
-		line-height: 1.7;
-		font-family: 'Cabin', sans-serif !;
-		font-size: 1.5rem;
-	}
-
-	#portfolio .project-item {
-		margin: 15px 0px;
-	}
-
-	#blog .section-heading {
-		text-align: center;
-		padding-top: 100px;
-		padding-bottom: 100px;
-		background-color: rgba(0, 0, 0, 0.5);
-		margin-left: -15px;
-		padding-left: 0vh;
-		margin-right: -15px;
-		padding-right: 0vh;
-		overflow: hidden!important;
-	}
-
-	#blog .section-heading .line-dec {
-		margin: 20px auto 15px auto;
-	}
-
-	#blog .section-heading p {
-		padding: 0px 30px;
-	}
-
-	.tabs {
-		padding: 0px 45px;
-	}
-
-	#first-tab-group {
-		margin-bottom: 30px;
-	}
-
-	#contact-us .section-heading p {
-		padding: 0px 10%;
-	}
-
-	footer {
-		text-align: center;
-	}
-
-	footer .logo {
-		margin-bottom: 30px;
-		padding-bottom: 30px;
-		border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-	}
-
-	footer .location {
-		margin-bottom: 30px;
-		padding-bottom: 30px;
-		border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-	}
-
-	footer .contact-info {
-		margin-bottom: 30px;
-		padding-bottom: 30px;
-		border-bottom: 1px solid rgba(250, 250, 250, 0.1);
-	}
-
-	footer .contact-info ul li {
-		margin-right: 10px;
-		margin-left: 10px;
-	}
-
-}
-
-@media (max-width: 768px){
-	.baner-content .text-content p {
-		padding: 0px 10%;
-	}
-	#main-nav {
-		margin-left: -15px;
-		margin-right: -15px;
-		border-top: none;
-		margin-top: 15px;
-		background-color: rgba(250, 250, 250, 0.95);
-	}
-
-	.navbar-nav {
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	.navbar-inverse .navbar-nav>li {
-		margin-left: 0px;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	}
-
-	.navbar-inverse .navbar-nav>li:last-child {
-		border-bottom: none;
-	}
-
-
-	.navbar-inverse .navbar-nav>li>a {
-		font-family: 'Nunito', sans-serif!important;
-		line-height: 55px;
-		color: #343434!important;
-	}
-
-}
-
-@media (max-width: 385px){
-
-	footer .location ul li {
-		display: block;
-	}
-
-	footer .location ul li:first-child {
-		margin-right: 0px;
-		padding-right: 0px;
-		border-right: none;
-	}
-
-}
-        html{
-            scroll-behavior: smooth !important;
-            scroll-padding-top: 100px;
-        }
-        body{
-            line-height: 1.7;
-            font-family: 'Cabin', sans-serif !important;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-        .tab-content {
-            font-size: 1.6rem;
-            padding-top:1rem;
-        }
-        /* === Navbar === */
-        .navbar {
-            margin-bottom: 0;
-            
-        }
-        .navbar-nav > li{
-            padding-left:1px;
-            padding-right:1px;
-            letter-spacing: 1px;
-            
-        }
-        .navbar-light .navbar-brand{
-            font-family: 'Nunito', sans-serif;
-            font-weight: 600;
-            font-size: 1.3rem;
-            
-        }
-        a.navbar-brand span{
-            font-size: 1.7rem;
-            font-weight: 900;
-            
-        }
-        .navbar-dark .navbar-nav .nav-link{
-            color: #a18c8c;
-            text-decoration: none !important;
-            
-        }
-        .navbar-dark .navbar-nav .nav-link:hover {
-            color: #ffffff;
-        }
-        
-        /* === Carousel === */
-        
-        .first-section {
-            background-position-x: center;
-            overflow: hidden;
-            height: 80vh;
-            vertical-align: middle;
-            background-size: cover;
-        }
-        .carousel {
-            width: 70vw;
-            padding-top:5rem;
-        }
-        
-     
-        .deplogo {
-           
-            margin-left:0;
-        }
-        
-        .dropdown-item:hover {
-            background-color: #A8E890;
-            
-        }
-        .nav-item:hover{
-            background-color: #749F82; 
-            color: #CFFF8D;
-            border-radius: 0.5rem;
-            
-        }
-        .nav-link:hover {
-            color: #ffffff !important;
-        }
-        .btnLang i{
-            
-          position: fixed;
-          bottom: 3rem;
-          left: 3rem;
-          scale: 250%;
-        }
-        td a {
-            color: inherit; 
-        }
-        #preloader {
-            background: #fff url(imgs/loader3.gif) no-repeat center;
-            height: 100vh;
-            width: 100%;
-            position: fixed;
-            z-index: 100;
-           }
-           .image {
-            line-height: 1.7;
-            font-family: 'Cabin', sans-serif;
-            font-size: 1.4rem;
-           }
-           .image li {
-            padding: 1rem;
-           }
-           .table-responsive {
-    overflow-x:auto;
-}
-table {
-  border-collapse: collapse;
-  width: 100%;
-  text-align: center;
-  line-height: 1.7;
-            font-family: 'Cabin', sans-serif !important;
-            font-size: 1.2rem;
-}
-
-th, td {
-  text-align: center;
-  padding: 8px;
-}
-
-tr:nth-child(even){
-    background-color: #f2f2f2;
-    border-top: 1px solid black;}
-tr:nth-child(odd){
-    background-color: #f2f2f2;
-    border-top: 1px solid black;
-}
-tr:nth-child(1){
-    border-top: hidden;
-}
-th {
-  background-color: #207432;
-  color: white;
-}
-tr:hover {
-  background-color: #D2D2D2;
-}
-a {
-    text-decoration: none !important;
-}
-.elective-table th{
-    color: #000;
-
-}
-
-                </style>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ProgramerPen/ProgramerPen.github.io@main/css/ProgrammerPen.css"> -->
+        <link rel="stylesheet" href="css/ProgrammerPen.css">
     </head>
-
 <body>
     <header>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;">
-            <div class="container ">
-                <img style="width:10%" class="deplogo" alt="جامعة الملك عبد العزيز" src="https://marz.kau.edu.sa/Files/13009/Galleries/8551/66274_logo_kau.png" /> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+            <img style="width:10%" class="deplogo" alt="جامعة الملك عبد العزيز" src="https://marz.kau.edu.sa/Files/13009/Galleries/8551/66274_logo_kau.png" /> 
+            <div class="container">
                 <a class="navbar-brand mr-5 pr-3" href="#">
-                    
+        
                     <span>Mathematics</span>
                     Department
                 </a>
@@ -1134,48 +36,60 @@ a {
                             <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Overview</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#Abbreviations">Abbreviations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Program Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Statistics</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Course Details</a>
+                            <a class="nav-link" href="#overview">Undergraduate</a>
                         </li>
                         <li class="nav-item dropdown dropend text-muted ">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              More
+                            Graduate
                             </a>
                             <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right w3-animate-zoom" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item " href="#">Administrative Structure</a></li>
-                              <div class="dropdown-divider"></div>
-                              <span class="dropdown-header">Staff Directory</span>
-                              <li><a class="dropdown-item" href="#">Staff Members</a></li>
-                              <li><a class="dropdown-item" href="#">Administrative Staff</a></li>
-                              <li><a class="dropdown-item" href="#">Graduate Staff</a></li>
-                              <div class="dropdown-divider"></div>
-                              <li><a class="dropdown-item" href="#">Research</a></li>
-
+                            <li><a class="dropdown-item " href="#">Master Program</a></li>
+                            <li><a class="dropdown-item " href="#">PhD Program</a></li>
                             </ul>
-                          </li>
+                        </li>
+                        <li class="nav-item dropdown dropend text-muted ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Research
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right w3-animate-zoom" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item " href="#">Area of Research</a></li>
+                            <li><a class="dropdown-item " href="#">Research Groups</a></li>
+                            <li><a class="dropdown-item " href="#">Seminars</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropend text-muted ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            People
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right w3-animate-zoom" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item " href="#">Department's Administrative</a></li>
+                            <li><a class="dropdown-item" href="#">Faculty Members</a></li>
+                            <li><a class="dropdown-item" href="#">Postodcs, Visitors, Adjuncts</a></li>
+                            <li><a class="dropdown-item" href="#">PhD Students</a></li>  
+                            <li><a class="dropdown-item" href="#">Master Students</a></li>
+                            <li><a class="dropdown-item" href="#">Retired Faculty</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown dropend text-muted ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left dropdown-menu-lg-right w3-animate-zoom" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item " href="#">Math Club</a></li>
+                            <li><a class="dropdown-item" href="#">Resources</a></li>
+                            <li><a class="dropdown-item" href="#">Files</a></li>                             
+                            </ul>
+                        </li>
                         </div>
                         
                     </ul>
                         
-                      
+                    
                 </div>
             </div>
         </nav>
         <!-- end of navbar -->
     </header>
-
-
     <div class="parallax-content baner-content" id="home">
         <div class="container">
             <div class="text-content">
@@ -1196,7 +110,7 @@ a {
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="icons/location-1.png" alt="">
+                            <img src="https://i.ibb.co/bssJJrV/location-1.png" alt="">
                         </div>
                         <h4>Home Faculty</h4>
                         <div class="line-dec"></div>
@@ -1209,7 +123,7 @@ a {
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="icons/title-2.png" alt="">
+                            <img src="https://i.ibb.co/F8L9QMC/title-2.png" alt="">
                         </div>
                         <h4>Testamur Title of Degree</h4>
                         <div class="line-dec"></div>
@@ -1222,7 +136,7 @@ a {
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="icons/time.png" alt="">
+                            <img src="https://i.ibb.co/yX84Lzt/time.png" alt="">
                         </div>
                         <h4>Duration</h4>
                         <div class="line-dec"></div>
@@ -1236,7 +150,7 @@ a {
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="service-item">
                         <div class="icon">
-                            <img src="icons/text-1.png" alt="">
+                            <img src="https://i.ibb.co/2K8rCjf/text-1.png" alt="">
                         </div>
                         <h4>Abbreviation</h4>
                         <div class="line-dec"></div>
@@ -1278,7 +192,7 @@ a {
                                 <div class="row">
                                     <div class="tab-content">
                                         <div id="1st" class="tab-pane fade in active">
-                                                <p class="tab-content">Graduates from BSc of Mathematics are expected to achieve the following program educational objectives:
+                                                <p class="tab-content tab2content">Graduates from BSc of Mathematics are expected to achieve the following program educational objectives:
                                                     <ul class="content">
                                                         <li class="content">
                                                             Have a successful career in the practice of Mathematics and related applications built on their understanding of formal and applied methods for problem-solving.
@@ -1293,7 +207,7 @@ a {
                                                         </li>        
                                     </div>
                                         <div id="2nd" class="tab-pane fade ">
-                                                <p class="tab-content">In ABET accreditation terminology, SOs describe "what students are expected to know and be able to do by the time of graduation. These relate to the knowledge, skills, and behaviors that students acquire as they progress through the program". The Mathematics program has adopted the  ABET 6 general-criteria outcomes for the ANSAC Commission as:
+                                                <p class="tab-content tab2content">In ABET accreditation terminology, SOs describe "what students are expected to know and be able to do by the time of graduation. These relate to the knowledge, skills, and behaviors that students acquire as they progress through the program". The Mathematics program has adopted the  ABET 6 general-criteria outcomes for the ANSAC Commission as:
                                                     <ul class="content">
                                                     <li>An ability to identify, formulate, and solve broadly defined technical or scientific problems by applying knowledge of Mathematics and science and/or technical topics to areas relevant to the discipline.
                                                     </li>
@@ -1307,7 +221,7 @@ a {
                                                 </p>
                                             </div>
                                             <div id="3rd" class="tab-pane fade">
-                                                <p class="tab-content">To become eligible for admission to BSc in Mathematics, candidates have to fulfill the following conditions:
+                                                <p class="tab-content tab2content">To become eligible for admission to BSc in Mathematics, candidates have to fulfill the following conditions:
                                                     <ul class="content">
                                                     <li>Student should hold the secondary school certificate.</li>
                                                     <li>Student should have passed all courses in the foundation year.</li>
@@ -1316,46 +230,47 @@ a {
                                             </p>
                                      
                                             </div>
-                                            <div id="4th" class="tab-pane fade">
-                                                <p class="tab-content">Every student registered for B.Sc. degree in mathematics shall have to follow the following plan of studies:
-                                                    <ol>
-                                                        <li>
-                                                            University Compulsory Courses:
-                                                            26 credit hours, student should choose from the following courses: ELI 101, ELI 102, ELI 103, ELI 104, CPIT 100, COMM 101, ARAB 101, ARAB 201, ISLS 101, ISLS 201, ISLS 301, ISLS 401.
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            Faculty Compulsory Courses:
-                                                            15 credit hours, Student should choose from the following courses: MATH 110, PHYS 110, STAT 110, CHEM 110, and BIO 110.  
-                                                        </li>
-                                                       
-                                                        <li>
-                                                            Faculty Elective Courses:
-                                                            9 credit hours, student should choose from the following courses: MATH 202, CHEM 281, PHYS 281, CHEM 200, PHYS 200 and MATH 390.
-                                                        </li>
-                                                        
-                                                        <li>
-                                                            Department Compulsory Courses:
-                                                            48 credit hours, student should choose from the following courses: MATH 203, MATH 204, MATH 205, MATH 241, MATH 261, MATH 305, MATH 311, MATH 312, MATH 331, MATH 342, MATH 343, MATH 413, MATH 421, MATH 463, MATH 464, and MATH 482.    
-                                                    </li>
-                                                   
-                                                    <li>
-                                                        Department Elective Courses:
-                                                        16 credit hours, student should choose from the following courses: MATH 261, MATH 332, MATH 333, MATH 406, MATH 414, MATH 423, MATH 444, MATH 405, MATH 462, MATH 471 and MATH 481.
-                                                    </li>
-                                                    
-                                                    <li>
-                                                        Statics & Computers Depart. Compulsory Courses:
-                                                        8 credit hours, student should choose from the following courses: CS 201 and STAT 211.
-                                                    </li>
-                                                    
-                                                    <li>Free Activities:
-                                                        6 credit hours elective courses that can be taught by any department in the university.
-                                                    </li>
-                                                </ol>
-                                                </p>
+                                          
                                                 
-                                            </div>
+                                                <div id="4th" data-tabs class="tabs fade">    
+                                                    <div class="tab2">
+                                                       <input type="radio" name="tabgroup" id="tab-1" checked>
+                                                       <label for="tab-1">Compulsory Courses</label>
+                                                       <div class="tab__content">
+                                                          <h4>University Compulsory Courses</h4>
+                                                          <p>6 credit hours, student should choose from the following courses: ELI 101, ELI 102, ELI 103, ELI 104, CPIT 100, COMM 101, ARAB 101, ARAB 201, ISLS 101, ISLS 201, ISLS 301, ISLS 401. </p>
+                                                          <h4>Faculty Compulsory Courses</h4>
+                                                         <p> 15 credit hours, Student should choose from the following courses: MATH 110, PHYS 110, STAT 110, CHEM 110, and BIO 110. </p>
+                                                         <h4>Department Compulsory Courses</h4>
+                                                         <p>48 credit hours, student should choose from the following courses: MATH 203, MATH 204, MATH 205, MATH 241, MATH 261, MATH 305, MATH 311, MATH 312, MATH 331, MATH 342, MATH 343, MATH 413, MATH 421, MATH 463, MATH 464, and MATH 482.</p>
+                                                         <h4>Statics & Computers Department Compulsory Courses</h4>
+                                                         <p>8 credit hours, student should choose from the following courses: CS 201 and STAT 211. </p>
+
+                                                        </div> 
+                                                    </div>
+                                                    <div class="tab2">
+                                                       <input type="radio" name="tabgroup" id="tab-2">
+                                                       <label for="tab-2">Elective Courses</label>
+                                                       <div class="tab__content">
+                                                          <h4>Faculty Elective Courses</h4>
+                                                          <p> 9 credit hours, student should choose from the following courses: MATH 202, CHEM 281, PHYS 281, CHEM 200, PHYS 200 and MATH 390. </p>
+                                                          <h4>Department Elective Courses</h4>
+                                                          <p> 16 credit hours, student should choose from the following courses: MATH 261, MATH 332, MATH 333, MATH 406, MATH 414, MATH 423, MATH 444, MATH 405, MATH 462, MATH 471 and MATH 481. </p>
+                                                       </div> 
+                                                    </div>
+                                                    <div class="tab2">
+                                                       <input type="radio" name="tabgroup" id="tab-3">
+                                                       <label for="tab-3">Free Activites</label>
+                                                       <div class="tab__content">
+                                                          <h4>Free Activites</h4>
+                                                          <p> 6 credit hours elective courses that can be taught by any department in the university. </p>
+                                                       </div> 
+                                                    </div>
+
+                                                 </div>
+                                                 
+                                                
+                                            
                                         </div>     
                                 </div>
                             </div>
@@ -1371,7 +286,7 @@ a {
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <p class="tab-content" style="color:#fff">B.Sc. Program Statistics</p>
+                    <p class="tab-content tab2content" style="text-align: center !important">B.Sc. Program Statistics</p>
                         <table div="">
                             <tr>
                               <th>Year</th>
@@ -1429,34 +344,7 @@ a {
                               <td></td>
                           </tr>
                           </table>
-                        <!-- <div class="item">
-                            <div class="testimonials-item">
-                                <p>“ Quisque ullamcorper odio a nisl lacinia dictum. Vestibulum malesuada ipsum in turpis finibus, ut sagittis erat scelerisque. Curabitur non risus fringilla libero accumsan molestie et quis justo. ”</p>
-                                <h4>George Rich</h4>
-                                <span>Marketing Head</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonials-item">
-                                <p>“ Suspendisse magna mauris, convallis vel finibus eget, lobortis dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”</p>
-                                <h4>John Henry</h4>
-                                <span>Art Director</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonials-item">
-                                <p>“ Aenean semper aliquam est ut maximus. Fusce id diam eget orci lobortis ultricies at ac velit. Curabitur laoreet massa et fringilla sagittis. ”</p>
-                                <h4>Danny Cute</h4>
-                                <span>Founder</span>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonials-item">
-                                <p>“ Maecenas eu odio pharetra, elementum lorem eget, efficitur erat. Duis eget justo non nisi iaculis vestibulum. Aliquam erat volutpat. ”</p>
-                                <h4>Richard Beal</h4>
-                                <span>Senior Developer</span>
-                            </div>
-                        </div> -->
+                  
                         
                 </div>
             </div>
@@ -1490,7 +378,7 @@ a {
                                 <table class="table table-responsive elective-table">
                                     <thead>
                                     <tr>
-                                    <th colspan="4" class="text-nowrap table-primary">Click on the course for more details</th>    
+                                    <th colspan="4" class="text-nowrap table-1">Click on the course for more details</th>    
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -1556,11 +444,11 @@ a {
                                 <table class="table table-responsive elective-table">
                                     <thead>
                                     <tr>
-                                        <th colspan="4" class="text-nowrap table-primary">List of Elective Courses</th>    
+                                        <th colspan="4" class="text-nowrap table-1">List of Elective Courses</th>    
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="table-success">
+                                    <tr class="table-2">
                                         <th>Course</th>
                                         <th>Course Title</th>
                                         <th>Credit Hours</th>
@@ -1643,170 +531,65 @@ a {
             </div>
         </div>
     </div>
-
-    <!-- <div id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-heading">
-                        <h4>Contact Us</h4>
-                        <div class="line-dec"></div>
-                        <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros feugiat.</p>
-                        <div class="pop-button">
-                            <h4>Send us a message</h4>
-                        </div>
-                    </div>
-                </div>
+    </footer> 
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><i class="icon ion-ios-telephone"></i></a>
+                <a href="#"><i class="icon ion-iphone"></i></a>
+                <a href="#"><i class="icon ion-social-twitter"></i></a>
+                <a href="#"><i class="icon ion-social-youtube"></i></a>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="pop">
-                        <span>✖</span>
-                        <form id="contact" action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
-                                  </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Bachelor Program</a></li>
+                <li class="list-inline-item"><a href="#">Master Program</a></li>
+                <li class="list-inline-item"><a href="#">PhD Program</a></li>   
+            </ul>
+            <p class="copyright">Mathematics Department, KAU © 2022</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/ProgramerPen/ProgramerPen.github.io@main/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ProgramerPen/ProgramerPen.github.io@main/js/plugins.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <!-- <div id="map"> -->
-    	<!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-        -->
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.449303911606!2d39.251464185735934!3d21.490114177245445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cdcf98400001%3A0x27067d3814778fe2!2z2YPZhNmK2Kkg2KfZhNi52YTZiNmFINmF2KjZhtmJIDExNQ!5e0!3m2!1sar!2s!4v1666121877587!5m2!1sar!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-    <!-- </div> -->
-
-    <!-- <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <div class="logo">
-                        <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
-                        <p>Copyright &copy; 2020 Your Company 
-                       <br>Design: TemplateMo</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="location">
-                        <h4>Location</h4>
-                        <ul>
-                            <li>46 Raffles Ave, <br>Singapore 039803</li>
-                            <li>12 Republic Blvd, <br>Singapore 038975</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12">
-                    <div class="contact-info">
-                        <h4>More Info</h4>
-                        <ul>
-                            <li><em>Phone</em>: 040-040-0440</li>
-                            <li><em>Email</em>: tk@company.co</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-12">
-                    <div class="connect-us">
-                        <h4>Get Social with us</h4>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <footer>
-        <div class="" id = "contact" style="color:#fff;">
-            <div class="row  justify-content-md-center py-5">
-
-                <!-- contact details for the institute -->
-                  <div class="col-lg-4 col-md-4 col-xs-12 ml-5 mb-3">
-                    <div class="widget clearfix">
-                        <div class="widget-title pb-2">
-                            <h3>---- Contact Us ----</h3>
-                        </div>
-                            <div class="info">
-                                <div class="address">
-                                    <h5><i class="fas fa-map-marker-alt mr-2"></i> Location :</h5>
-                                    <p style="color:#fff">Faculty of Science, Building A90, 3rd Floor</p>
-                                </div>
-                    
-                                <div class="email">
-                                    <h5><i class="fas fa-envelope mr-2"></i> Email :</h5>
-                                    <p style="color:#fff">sci.math@kau.edu.sa</p>
-                                </div>
-                    
-                                <div class="phone">
-                                    <h5><i class="fas fa-phone-alt mr-2"></i> Call :</h5>
-                                    <p style="color:#fff">+966 (12) 6952669 </p>
-                                </div>
-                                <div class="Whatsapp">
-                                    <h5><i class="fas fa-phone-alt mr-2"></i> Whatsapp :</h5>
-                                    <p style="color:#fff">+966568626948</p>
-                                </div>
-                
-                            </div>
+   
+   <script>
+        (function($, document) {
     
-                        <!-- important links -->
-                        <div class="footer-right">
-                            <ul class="footer-links-soi">
-                                <li><a href="https://twitter.com/kau_math"><i class="fab fa-twitter fa-lg"></i>   KAU_Math</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-xs-12 mr-5 mb-3">
-                    <!-- join us form -->
-                    
+    // get tallest tab__content element
+    let height = -1;
 
-                            <!-- <h4 class="text-white text-center mb-3">---- Get In Touch ----</h4> -->
-                            <div class="row ">
-                                <a class="twitter-timeline" data-lang="en" data-height="400" href="https://twitter.com/KAU_Math?ref_src=twsrc%5Etfw">Tweets by KAU_Math</a> 
-                            </div>
-                        
-                    
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+      $('.tab__content').each(function() {
+          height = height > $(this).outerHeight() ? height : $(this).outerHeight();
+       $(this).css('position', 'absolute');
+      });
+    
+    // set height of tabs + top offset
+      $('[data-tabs]').css('min-height', height + 40 + 'px');
+ 
+}(jQuery, document));
+        </script>
+<script>
+    $("document").ready(function(){
+  $(".tab-slider--body").hide();
+  $(".tab-slider--body:first").show();
+});
 
+$(".tab-slider--nav li").click(function() {
+  $(".tab-slider--body").hide();
+  var activeTab = $(this).attr("rel");
+  $("#"+activeTab).fadeIn();
+	if($(this).attr("rel") == "tab2"){
+		$('.tab-slider--tabs').addClass('slide');
+	}else{
+		$('.tab-slider--tabs').removeClass('slide');
+	}
+  $(".tab-slider--nav li").removeClass("active");
+  $(this).addClass("active");
+});
 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+</script>
     <script type="text/javascript">
     $(document).ready(function() {
         // navigation click actions 
