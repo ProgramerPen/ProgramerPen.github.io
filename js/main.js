@@ -1,5 +1,8 @@
 jQuery(document).ready(function($) {
+if ("https://math.kau.edu.sa/Pages-PhD-Program-en.aspx".indexOf(document.URL) > -1){
+    document.querySelector(".programs-details ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)").href="https://math.kau.edu.sa/Pages-ent-phd-en.aspx";
 
+}
 	'use strict';
 
       var owl = $("#owl-testimonials");
